@@ -1,0 +1,7 @@
+<h1>Результат поиска по <%= keyword %></h1>
+<dl>
+	<% feeds.entries.forEach(function(feed){ %>
+		<dt><a href="<%- feed.link%>"><%- feed.title %></a></dt>
+		<dd><%- feed.contentSnippet %></dd>
+	<% }); %>
+</dl>

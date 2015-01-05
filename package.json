@@ -7,7 +7,8 @@
     "express": "^3.5.0"
   },
   "devDependencies": {
-    "ejs": "^2.0.6"
+    "ejs": "^2.0.6",
+    "request": "^2.51.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
