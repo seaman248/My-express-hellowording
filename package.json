@@ -8,7 +8,8 @@
   },
   "devDependencies": {
     "ejs": "^2.0.6",
-    "request": "^2.51.0"
+    "request": "^2.51.0",
+    "socket.io": "^1.2.1"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

@@ -1,0 +1,19 @@
+<!-- Magic string -->
+<script src='/socket.io/socket.io.js'></script>
+
+<script>
+	var socket = io.connect('http://localhost:3000');
+
+	// socket.emit('message', 'John');
+
+	socket.on('hello', function(data){
+		alert(data.hello);
+	});
+
+	function getName () {
+		var name = prompt('Как вас зовут?', 'Guest');
+		if(name) socket.emit('hello',name);
+	}
+</script>
+
+<button onclick = 'getName()'>Представьтесь</button>
